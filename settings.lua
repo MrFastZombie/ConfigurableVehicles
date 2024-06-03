@@ -114,6 +114,12 @@ data:extend({
         setting_type = "startup",
         default_value = "600kW"
     },
+    {
+        type = "int-setting",
+        name = "tank-inventory-size",
+        setting_type = "startup",
+        default_value = 80
+    },
     --Car
     {
         type = "bool-setting",
@@ -192,6 +198,12 @@ data:extend({
         name = "car-consumption",
         setting_type = "startup",
         default_value = "150kW"
+    },
+    {
+        type = "int-setting",
+        name = "car-inventory-size",
+        setting_type = "startup",
+        default_value = 80
     },
     --Locomotive
     {

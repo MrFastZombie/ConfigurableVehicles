@@ -17,3 +17,4 @@ data.raw.car.tank.turret_rotation_speed = settings.startup["tank-turret-rotation
 data.raw.car.tank.rotation_speed = settings.startup["tank-rotation-speed"].value
 data.raw.car.tank.braking_power = settings.startup["tank-braking-power"].value
 data.raw.car.tank.consumption = settings.startup["tank-consumption"].value
+data.raw.car.tank.inventory_size = settings.startup["tank-inventory-size"].value

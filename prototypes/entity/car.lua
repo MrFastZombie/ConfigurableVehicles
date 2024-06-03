@@ -11,3 +11,4 @@ data.raw.car.car.friction = settings.startup["car-friction"].value
 data.raw.car.car.turret_rotation_speed = settings.startup["car-turret-rotation-speed"].value
 data.raw.car.car.braking_power = settings.startup["car-braking-power"].value
 data.raw.car.car.consumption = settings.startup["car-consumption"].value
+data.raw.car.car.inventory_size = settings.startup["car-inventory-size"].value
