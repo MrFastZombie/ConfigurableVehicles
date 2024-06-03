@@ -4,7 +4,7 @@ data:extend({
         type = "bool-setting",
         name = "tank-rock-impact",
         setting_type = "startup",
-        default_value = false
+        default_value = true
     },
     {
         type = "bool-setting",
@@ -65,6 +65,36 @@ data:extend({
         name = "tank-cannon-damagemod",
         setting_type = "startup",
         default_value = 1
+    },
+    {
+        type = "double-setting",
+        name = "tank-friction",
+        setting_type = "startup",
+        default_value = 0.002
+    },
+    {
+        type = "double-setting",
+        name = "tank-effectivity",
+        setting_type = "startup",
+        default_value = 0.9
+    },
+    {
+        type = "double-setting",
+        name = "tank-energy-per-hit",
+        setting_type = "startup",
+        default_value = 0.5
+    },
+    {
+        type = "double-setting",
+        name = "tank-turret-rotation-speed",
+        setting_type = "startup",
+        default_value = 0.0058333333333333
+    },
+    {
+        type = "double-setting",
+        name = "tank-rotation-speed",
+        setting_type = "startup",
+        default_value = 0.0035
     },
     --Car
     {
