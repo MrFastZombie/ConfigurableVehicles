@@ -186,5 +186,60 @@ data:extend({
         name = "car-consumption",
         setting_type = "startup",
         default_value = "150kW"
+    },
+    --Locomotive
+    {
+        type = "double-setting",
+        name = "locomotive-air-resistance",
+        setting_type = "startup",
+        default_value = 0.0075
+    },
+    {
+        type = "double-setting",
+        name = "locomotive-braking-force",
+        setting_type = "startup",
+        default_value = 10
+    },
+    {
+        type = "double-setting",
+        name = "locomotive-energy-per-hit",
+        setting_type = "startup",
+        default_value = 5
+    },
+    {
+        type = "double-setting",
+        name = "locomotive-friction",
+        setting_type = "startup",
+        default_value = 0.5
+    },
+    {
+        type = "int-setting",
+        name = "locomotive-max-health",
+        setting_type = "startup",
+        default_value = 1000
+    },
+    {
+        type = "string-setting",
+        name = "locomotive-max-power",
+        setting_type = "startup",
+        default_value = "600kW"
+    },
+    {
+        type = "double-setting",
+        name = "locomotive-max-speed",
+        setting_type = "startup",
+        default_value = "1.2"
+    },
+    {
+        type = "double-setting",
+        name = "locomotive-reverse-power-mod",
+        setting_type = "startup",
+        default_value = 0.6
+    },
+    {
+        type = "int-setting",
+        name = "locomotive-weight",
+        setting_type = "startup",
+        default_value = 2000
     }
 })
