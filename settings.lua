@@ -37,7 +37,7 @@ data:extend({
         default_value = 9
     },
     {
-        type = "int-setting",
+        type = "double-setting",
         name = "tank-flamethrower-damagemod",
         setting_type = "startup",
         default_value = 1
@@ -49,7 +49,7 @@ data:extend({
         default_value = 20
     },
     {
-        type = "int-setting",
+        type = "double-setting",
         name = "tank-mg-damagemod",
         setting_type = "startup",
         default_value = 1
@@ -61,7 +61,7 @@ data:extend({
         default_value = 30
     },
     {
-        type = "int-setting",
+        type = "double-setting",
         name = "tank-cannon-damagemod",
         setting_type = "startup",
         default_value = 1
