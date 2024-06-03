@@ -241,5 +241,54 @@ data:extend({
         name = "locomotive-weight",
         setting_type = "startup",
         default_value = 2000
+    },
+    --Cargo wagon
+    {
+        type = "double-setting",
+        name = "cargo-wagon-air-resistance",
+        setting_type = "startup",
+        default_value = 0.01
+    },
+    {
+        type = "double-setting",
+        name = "cargo-wagon-braking-force",
+        setting_type = "startup",
+        default_value = 3
+    },
+    {
+        type = "double-setting",
+        name = "cargo-wagon-energy-per-hit",
+        setting_type = "startup",
+        default_value = 5
+    },
+    {
+        type = "double-setting",
+        name = "cargo-wagon-friction",
+        setting_type = "startup",
+        default_value = 0.5
+    },
+    {
+        type = "int-setting",
+        name = "cargo-wagon-capacity",
+        setting_type = "startup",
+        default_value = 40
+    },
+    {
+        type = "int-setting",
+        name = "cargo-wagon-max-health",
+        setting_type = "startup",
+        default_value = 600
+    },
+    {
+        type = "int-setting",
+        name = "cargo-wagon-max-speed",
+        setting_type = "startup",
+        default_value = 1.5
+    },
+    {
+        type="int-setting",
+        name="cargo-wagon-weight",
+        setting_type="startup",
+        default_value=1000
     }
 })
