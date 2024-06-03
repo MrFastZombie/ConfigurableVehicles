@@ -2,6 +2,12 @@ data:extend({
     --Tank
     {
         type = "bool-setting",
+        name = "tank-enable",
+        setting_type = "startup",
+        default_value = false
+    },
+    {
+        type = "bool-setting",
         name = "tank-rock-impact",
         setting_type = "startup",
         default_value = true
@@ -123,6 +129,12 @@ data:extend({
     --Car
     {
         type = "bool-setting",
+        name = "car-enable",
+        setting_type = "startup",
+        default_value = false
+    },
+    {
+        type = "bool-setting",
         name = "car-rock-impact",
         setting_type = "startup",
         default_value = false
@@ -207,6 +219,12 @@ data:extend({
     },
     --Locomotive
     {
+        type = "bool-setting",
+        name = "locomotive-enable",
+        setting_type = "startup",
+        default_value = false
+    },
+    {
         type = "double-setting",
         name = "locomotive-air-resistance",
         setting_type = "startup",
@@ -262,6 +280,12 @@ data:extend({
     },
     --Cargo wagon
     {
+        type = "bool-setting",
+        name = "cargo-wagon-enable",
+        setting_type = "startup",
+        default_value = false
+    },
+    {
         type = "double-setting",
         name = "cargo-wagon-air-resistance",
         setting_type = "startup",
@@ -310,6 +334,12 @@ data:extend({
         default_value=1000
     },
     --Spidertron
+    {
+        type = "bool-setting",
+        name = "spidertron-enable",
+        setting_type = "startup",
+        default_value = false
+    },
     {
         type = "double-setting",
         name = "spidertron-leg-initial-movement-speed",
