@@ -5,3 +5,7 @@ data.raw.car.car.max_health = settings.startup["car-health"].value
 data.raw.car.car.immune_to_rock_impacts = settings.startup["car-rock-impact"].value
 data.raw.car.car.immune_to_cliff_impacts = settings.startup["car-cliff-impact"].value
 data.raw.car.car.immune_to_tree_impacts = settings.startup["car-tree-impact"].value
+data.raw.car.car.energy_per_hit_point = settings.startup["car-energy-per-hit"].value
+data.raw.car.car.effectivity = settings.startup["car-effectivity"].value
+data.raw.car.car.friction = settings.startup["car-friction"].value
+data.raw.car.car.turret_rotation_speed = settings.startup["car-turret-rotation-speed"].value

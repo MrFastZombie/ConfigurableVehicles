@@ -138,5 +138,29 @@ data:extend({
         name = "car-mg-damagemod",
         setting_type = "startup",
         default_value = 1
+    },
+    {
+        type = "double-setting",
+        name = "car-energy-per-hit",
+        setting_type = "startup",
+        default_value = 1
+    },
+    {
+        type = "double-setting",
+        name = "car-effectivity",
+        setting_type = "startup",
+        default_value = 0.6
+    },
+    {
+        type = "double-setting",
+        name = "car-friction",
+        setting_type = "startup",
+        default_value = 0.002
+    },
+    {
+        type = "double-setting",
+        name = "car-turret-rotation-speed",
+        setting_type = "startup",
+        default_value = 0.0058333333333333
     }
 })
