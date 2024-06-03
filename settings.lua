@@ -32,6 +32,12 @@ data:extend({
     },
     {
         type = "int-setting",
+        name = "tank-flamethrower-min-range",
+        setting_type = "startup",
+        default_value = 3
+    },
+    {
+        type = "int-setting",
         name = "tank-flamethrower-range",
         setting_type = "startup",
         default_value = 9

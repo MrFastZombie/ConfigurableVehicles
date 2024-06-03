@@ -1,5 +1,6 @@
 data.raw.gun["tank-machine-gun"].attack_parameters.range = settings.startup["tank-mg-range"].value
 data.raw.gun["tank-machine-gun"].attack_parameters.damage_modifier = settings.startup["tank-mg-damagemod"].value
+data.raw.gun["tank-flamethrower"].attack_parameters.min_range = settings.startup["tank-flamethrower-min-range"].value
 data.raw.gun["tank-flamethrower"].attack_parameters.range = settings.startup["tank-flamethrower-range"].value
 data.raw.gun["tank-flamethrower"].attack_parameters.damage_modifier = settings.startup["tank-flamethrower-damagemod"].value
 data.raw.gun["tank-cannon"].attack_parameters.range = settings.startup["tank-cannon-range"].value
