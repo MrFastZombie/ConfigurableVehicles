@@ -162,5 +162,17 @@ data:extend({
         name = "car-turret-rotation-speed",
         setting_type = "startup",
         default_value = 0.0058333333333333
+    },
+    {
+        type = "string-setting",
+        name = "car-braking-power",
+        setting_type = "startup",
+        default_value = "200kW"
+    },
+    {
+        type = "string-setting",
+        name = "car-consumption",
+        setting_type = "startup",
+        default_value = "150kW"
     }
 })
