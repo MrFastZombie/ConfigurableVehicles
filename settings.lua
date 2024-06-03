@@ -96,6 +96,18 @@ data:extend({
         setting_type = "startup",
         default_value = 0.0035
     },
+    {
+        type = "string-setting",
+        name = "tank-braking-power",
+        setting_type = "startup",
+        default_value = "400kW"
+    },
+    {
+        type = "string-setting",
+        name = "tank-consumption",
+        setting_type = "startup",
+        default_value = "600kW"
+    },
     --Car
     {
         type = "bool-setting",

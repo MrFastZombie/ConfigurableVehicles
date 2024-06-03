@@ -14,3 +14,5 @@ data.raw.car.tank.effectivity = settings.startup["tank-effectivity"].value
 data.raw.car.tank.energy_per_hit_point = settings.startup["tank-energy-per-hit"].value
 data.raw.car.tank.turret_rotation_speed = settings.startup["tank-turret-rotation-speed"].value
 data.raw.car.tank.rotation_speed = settings.startup["tank-rotation-speed"].value
+data.raw.car.tank.braking_power = settings.startup["tank-braking-power"].value
+data.raw.car.tank.consumption = settings.startup["tank-consumption"].value
