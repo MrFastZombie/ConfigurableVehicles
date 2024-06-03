@@ -290,5 +290,78 @@ data:extend({
         name="cargo-wagon-weight",
         setting_type="startup",
         default_value=1000
-    }
+    },
+    --Spidertron
+    {
+        type = "double-setting",
+        name = "spidertron-leg-initial-movement-speed",
+        setting_type = "startup",
+        default_value = 0.06
+    },
+    {
+        type = "int-setting",
+        name = "spidertron-leg-max-health",
+        setting_type = "startup",
+        default_value = 100
+    },
+    {
+        type = "double-setting",
+        name = "spidertron-leg-movement-acceleration",
+        setting_type = "startup",
+        default_value = 0.03
+    },
+    {
+        type = "bool-setting",
+        name = "spidertron-auto-weapon-cycle",
+        setting_type = "startup",
+        default_value = true
+    },
+    {
+        type = "double-setting",
+        name = "spidertron-braking-force",
+        setting_type = "startup",
+        default_value = 1
+    },
+    {
+        type = "double-setting",
+        name = "spidertron-chain-cooldown",
+        setting_type = "startup",
+        default_value = 0.5
+    },
+    {
+        type = "double-setting",
+        name = "spidertron-energy-per-hit",
+        setting_type = "startup",
+        default_value = 1
+    },
+    {
+        type = "int-setting",
+        name = "spidertron-inventory-size",
+        setting_type = "startup",
+        default_value = 80
+    },
+    {
+        type = "int-setting",
+        name = "spidertron-trash-inventory-size",
+        setting_type = "startup",
+        default_value = 20
+    },
+    {
+        type = "int-setting",
+        name = "spidertron-max-health",
+        setting_type = "startup",
+        default_value = 3000
+    },
+    {
+        type = "double-setting",
+        name = "spidertron-torso-rotation-speed",
+        setting_type = "startup",
+        default_value = 0.005
+    },
+    {
+        type = "int-setting",
+        name = "spidertron-weight",
+        setting_type = "startup",
+        default_value = 1
+    },
 })

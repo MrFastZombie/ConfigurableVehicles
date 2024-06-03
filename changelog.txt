@@ -3,8 +3,9 @@ Version: 1.0.0
 Date: 02. 06. 2024
   Major Features:
     - Initial release.
-    - Support for Tank, Car, Locomotive, Cargo-wagon
+    - Support for Tank, Car, Locomotive, Cargo-wagon, Spidertron
       - Tank: Impact immunities, Health, Flamethrower range & damage, MG range & damage, Cannon range & damage, braking power, fuel consumption, turret rotation speed, energy per hit, effectivity, friction, rotation speed
       - Car: Impact immunities, MG range & damage, braking power, fuel consumption, turret rotation speed, energy per hit, effectivity, friction
       - Locomotive: Air resistance, braking force, energy per hit, friction, max health, max power, max speed, reverse power modifier, weight
       - Cargo-wagon: Air resistance, braking force, energy per hit, friction, max health, max speed, weight, capacity
+      - Spidertron: Leg initial move speed, leg max health, leg acceleration, auto cycle, braking force, chain cooldown, energy per hit, inventory size, trash inventory size, max health, torso rotation speed, weight

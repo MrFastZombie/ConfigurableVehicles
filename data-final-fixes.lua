@@ -1,2 +1,5 @@
 require("prototypes/entity/car")
 require("prototypes/entity/tank")
+require("prototypes/entity/locomotive")
+require("prototypes/entity/cargo-wagon")
+require("prototypes/entity/spidertron")
