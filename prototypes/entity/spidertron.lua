@@ -1,9 +1,9 @@
 ---@diagnostic disable: assign-type-mismatch --it was complaining but this works
 if settings.startup["spidertron-enable"].value then
     for i,v in pairs(data.raw["spider-leg"]) do
+        v.max_health = settings.startup["spidertron-leg-max-health"].value
         if not settings.startup["spidertron-cursed"].value then
             v.initial_movement_speed = settings.startup["spidertron-leg-initial-movement-speed"].value
-            v.max_health = settings.startup["spidertron-leg-max-health"].value
             v.movement_acceleration = settings.startup["spidertron-leg-movement-acceleration"].value
         end
 
