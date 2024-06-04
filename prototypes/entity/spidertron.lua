@@ -1,8 +1,23 @@
+---@diagnostic disable: assign-type-mismatch --it was complaining but this works
 if settings.startup["spidertron-enable"].value then
-    for i=1,8 do --Some IDEs might complain about the assignments below this, but it works.
-        data.raw["spider-leg"]["spidertron-leg-"..i].initial_movement_speed = settings.startup["spidertron-leg-initial-movement-speed"].value
-        data.raw["spider-leg"]["spidertron-leg-"..i].max_health = settings.startup["spidertron-leg-max-health"].value
-        data.raw["spider-leg"]["spidertron-leg-"..i].movement_acceleration = settings.startup["spidertron-leg-movement-acceleration"].value
+    for i,v in pairs(data.raw["spider-leg"]) do
+        if not settings.startup["spidertron-cursed"].value then
+            v.initial_movement_speed = settings.startup["spidertron-leg-initial-movement-speed"].value
+            v.max_health = settings.startup["spidertron-leg-max-health"].value
+            v.movement_acceleration = settings.startup["spidertron-leg-movement-acceleration"].value
+        end
+
+        if settings.startup["spidertron-cursed"].value then --Randomization for cursed spoober
+            v.initial_movement_speed = math.random(0.01,1)
+            v.movement_acceleration = math.random(0.01, 1)
+            v.part_length = math.random(1,6)
+            v.minimal_step_size = math.floor(math.random(1,10))
+        end
+    end
+    
+    if settings.startup["spidertron-cursed"].value then
+        data.raw["spider-vehicle"]["spidertron"].torso_bob_speed = math.random(1,255)
+        data.raw["spider-vehicle"]["spidertron"].height = math.random(1,13)
     end
 
     data.raw["spider-vehicle"]["spidertron"].automatic_weapon_cycling = settings.startup["spidertron-auto-weapon-cycle"].value

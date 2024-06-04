@@ -394,7 +394,14 @@ data:extend({
         name = "spidertron-enable",
         setting_type = "startup",
         default_value = false,
-		order = "e"
+		order = "ea"
+    },
+    {
+        type="bool-setting",
+        name="spidertron-cursed",
+        setting_type="startup",
+        default_value=false,
+        order = "eab"
     },
     {
         type = "double-setting",
