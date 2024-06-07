@@ -425,6 +425,18 @@ data:extend({
 		order = "eb"
     },
     {
+        type = "int-setting",
+        name = "spidertron-rocket-range",
+        default_value = 36,
+        order = "eba"
+    },
+    {
+        type = "double-setting",
+        name = "spidertron-rocket-cooldown",
+        default_value = 60,
+        order = "eba"
+    },
+    {
         type = "bool-setting",
         name = "spidertron-auto-weapon-cycle",
         setting_type = "startup",

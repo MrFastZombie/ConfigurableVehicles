@@ -20,6 +20,15 @@ if settings.startup["spidertron-enable"].value then
         data.raw["spider-vehicle"]["spidertron"].height = math.random(1,13)
     end
 
+    data.raw.gun["spidertron-rocket-launcher-1"].attack_parameters.cooldown = settings.startup["spidertron-rocket-cooldown"].value
+    data.raw.gun["spidertron-rocket-launcher-1"].attack_parameters.range = settings.startup["spidertron-rocket-range"].value
+    data.raw.gun["spidertron-rocket-launcher-2"].attack_parameters.cooldown = settings.startup["spidertron-rocket-cooldown"].value
+    data.raw.gun["spidertron-rocket-launcher-2"].attack_parameters.range = settings.startup["spidertron-rocket-range"].value
+    data.raw.gun["spidertron-rocket-launcher-3"].attack_parameters.cooldown = settings.startup["spidertron-rocket-cooldown"].value
+    data.raw.gun["spidertron-rocket-launcher-3"].attack_parameters.range = settings.startup["spidertron-rocket-range"].value
+    data.raw.gun["spidertron-rocket-launcher-4"].attack_parameters.cooldown = settings.startup["spidertron-rocket-cooldown"].value
+    data.raw.gun["spidertron-rocket-launcher-4"].attack_parameters.range = settings.startup["spidertron-rocket-range"].value
+    
     data.raw["spider-vehicle"]["spidertron"].automatic_weapon_cycling = settings.startup["spidertron-auto-weapon-cycle"].value
     data.raw["spider-vehicle"]["spidertron"].braking_force = settings.startup["spidertron-braking-force"].value
     data.raw["spider-vehicle"]["spidertron"].chain_shooting_cooldown_modifier = settings.startup["spidertron-chain-cooldown"].value
