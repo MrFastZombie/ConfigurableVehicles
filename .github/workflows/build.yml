@@ -45,7 +45,7 @@ jobs:
       - name: Make mod folder
         run: | 
           mkdir ./${{env.MOD_NAME}}
-          mv $(ls --ignore=${{env.MOD_NAME}}}}) ./${{env.MOD_NAME}}
+          mv $(ls --ignore=${{env.MOD_NAME}}) ./${{env.MOD_NAME}}
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
