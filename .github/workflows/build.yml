@@ -32,6 +32,7 @@ jobs:
             locale 
             settings.lua 
             data-final-fixes.lua
+          sparse-checkout-cone-mode: false
 
       - name: Get version number
         run: |
