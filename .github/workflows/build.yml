@@ -1,5 +1,8 @@
 name: Build
 
+env:
+  MOD_NAME: ConfigurableVehicles
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -41,13 +44,13 @@ jobs:
 
       - name: Make mod folder
         run: | 
-          mkdir ./ConfigurableVehicles
-          mv $(ls --ignore=ConfigurableVehicles) ./ConfigurableVehicles
+          mkdir ./${{env.MOD_NAME}}
+          mv $(ls --ignore=${{env.MOD_NAME}}}}) ./${{env.MOD_NAME}}
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
         with:
-          name: "ConfigurableVehicles_${{env.LATEST}}"
+          name: "${{env.MOD_NAME}}_${{env.LATEST}}"
           path: |
             ${{github.workspace}}/*
             !.git*
