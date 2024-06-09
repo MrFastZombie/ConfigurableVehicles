@@ -1,9 +1,9 @@
    {
      "name": "ConfigurableVehicles",
-     "version": "1.0.0",
+     "version": "1.0.1",
      "title": "Configurable Vehicles",
      "author": "MrFastZombie",
      "factorio_version": "1.1",
 	 "description": "Lets you customize the properties of the vanilla vehicles.",
-     "dependencies": []
+     "dependencies": ["? flattening-trains"]
    }

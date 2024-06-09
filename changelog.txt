@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 08. 06. 2024
+  Major Features:
+    - Fluid wagon support (i forgor 💀)
+      - Air resistance, braking force, energy per hit, friction, max health, max speed, weight, fluid capacity.
+  Minor Features:
+    - Added flattening-trains as optional dependency. CV will now override its settings if you enable customization for the train entities.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 02. 06. 2024
   Major Features:
