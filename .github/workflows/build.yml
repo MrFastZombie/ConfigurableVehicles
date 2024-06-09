@@ -21,9 +21,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: Bhacaz/checkout-files@v2
-        with:
-         files: thumbnail.png info.json LICENSE changelog.txt prototypes locale settings.lua data-final-fixes.lua
+      - uses: actions/checkout@v4
+        with: 
+          sparse-checkout: |
+            thumbnail.png 
+            info.json 
+            LICENSE 
+            changelog.txt 
+            prototypes 
+            locale 
+            settings.lua 
+            data-final-fixes.lua
 
       - name: Get version number
         run: |
