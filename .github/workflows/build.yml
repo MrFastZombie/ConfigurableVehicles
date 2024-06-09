@@ -47,6 +47,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: "ConfigurableVehicles_${{env.LATEST}}"
-          path: ${{github.workspace}}/ConfigurableVehicles
+          path: |
+            ${{github.workspace}}/*
+            !.git*
           retention-days: 5
 
