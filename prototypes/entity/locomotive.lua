@@ -8,4 +8,5 @@ if settings.startup["locomotive-enable"].value then
     data.raw.locomotive.locomotive.max_speed = settings.startup["locomotive-max-speed"].value
     data.raw.locomotive.locomotive.reversing_power_modifier = settings.startup["locomotive-reverse-power-mod"].value
     data.raw.locomotive.locomotive.weight = settings.startup["locomotive-weight"].value
+    data.raw.locomotive.locomotive.allow_remote_driving = settings.startup["locomotive-remote-driving"].value
 end

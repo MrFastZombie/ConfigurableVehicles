@@ -29,18 +29,46 @@ data:extend({
 		order = "bb"
     },
     {
+        type = "bool-setting",
+        name = "tank-remote-driving",
+        setting_type = "startup",
+        default_value = false,
+        order = "bba"
+    },
+    {
+        type = "bool-setting",
+        name = "tank-sort-inventory",
+        setting_type = "startup",
+        default_value = false,
+        order = "bbb"
+    },
+    {
+        type = "int-setting",
+        name = "tank-inventory-size",
+        setting_type = "startup",
+        default_value = 80,
+        order = "bf"
+    },
+    {
+        type = "int-setting",
+        name = "tank-trash-inventory-size",
+        setting_type = "startup",
+        default_value = 20,
+        order = "bfa"
+    },
+    {
         type = "int-setting",
         name = "tank-health",
         setting_type = "startup",
         default_value = 2000,
-		order = "bf"
+		order = "bfb"
     },
     {
         type = "int-setting",
         name = "tank-weight",
         setting_type = "startup",
         default_value = 20000,
-		order = "bf"
+		order = "bfb"
     },
     {
         type = "int-setting",
@@ -140,13 +168,6 @@ data:extend({
         default_value = "600kW",
 		order = "bf"
     },
-    {
-        type = "int-setting",
-        name = "tank-inventory-size",
-        setting_type = "startup",
-        default_value = 80,
-		order = "bf"
-    },
     --Car
     {
         type = "bool-setting",
@@ -177,6 +198,20 @@ data:extend({
 		order = "ab"
     },
     {
+        type = "bool-setting",
+        name = "car-remote-driving",
+        setting_type = "startup",
+        default_value = false,
+        order = "abc"
+    },
+    {
+        type = "bool-setting",
+        name = "car-sort-inventory",
+        setting_type = "startup",
+        default_value = false,
+        order = "abc"
+    },
+    {
         type = "int-setting",
         name = "car-health",
         setting_type = "startup",
@@ -188,7 +223,7 @@ data:extend({
         name = "car-weight",
         setting_type = "startup",
         default_value = 700,
-		order = "azz"
+		order = "acc"
     },
     {
         type = "int-setting",
@@ -251,7 +286,14 @@ data:extend({
         name = "car-inventory-size",
         setting_type = "startup",
         default_value = 80,
-		order = "azz"
+		order = "azzb"
+    },
+    {
+        type = "int-setting",
+        name = "car-trash-inventory-size",
+        setting_type = "startup",
+        default_value = 0,
+        order = "azzzb"
     },
     --Locomotive
     {
@@ -260,6 +302,13 @@ data:extend({
         setting_type = "startup",
         default_value = false,
 		order = "c"
+    },
+    {
+        type = "bool-setting",
+        name = "locomotive-remote-driving",
+        setting_type = "startup",
+        default_value = true,
+        order = "ca"
     },
     {
         type = "double-setting",
@@ -466,6 +515,13 @@ data:extend({
         setting_type="startup",
         default_value=false,
         order = "fab"
+    },
+    {
+        type = "bool-setting",
+        name = "spidertron-remote-driving",
+        setting_type = "startup",
+        default_value = true,
+        order = "fabb"
     },
     {
         type = "double-setting",
