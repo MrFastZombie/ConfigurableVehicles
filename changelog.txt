@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 22. 10. 2024
+  Features:
+    - Car: Allow remote driving, auto sort inventory, trash inventory size.
+    - Tank: Allow remote driving, auto sort inventory, trash inventory size.
+    - Locomotive: Allow remote driving.
+    - Spidertron: Allow remote driving.
+  Bugfixes:
+    - Cursed Spidertron setting fixed.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 21. 10. 2024
   Minor Features:
