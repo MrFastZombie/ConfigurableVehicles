@@ -18,7 +18,7 @@ data:extend({
         type = "bool-setting",
         name = "tank-cliff-impact",
         setting_type = "startup",
-        default_value = false,
+        default_value = true,
 		order = "bb"
     },
     {
