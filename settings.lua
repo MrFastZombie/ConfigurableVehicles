@@ -18,7 +18,7 @@ data:extend({
         type = "bool-setting",
         name = "tank-cliff-impact",
         setting_type = "startup",
-        default_value = false,
+        default_value = true,
 		order = "bb"
     },
     {
@@ -116,7 +116,7 @@ data:extend({
         type = "double-setting",
         name = "tank-turret-rotation-speed",
         setting_type = "startup",
-        default_value = 0.0058333333333333,
+        default_value = 0.00583333,
 		order = "bf"
     },
     {
@@ -166,7 +166,7 @@ data:extend({
         type = "bool-setting",
         name = "car-cliff-impact",
         setting_type = "startup",
-        default_value = false,
+        default_value = true,
 		order = "ab"
     },
     {
@@ -229,7 +229,7 @@ data:extend({
         type = "double-setting",
         name = "car-turret-rotation-speed",
         setting_type = "startup",
-        default_value = 0.0058333333333333,
+        default_value = 0.00583333,
 		order = "ac"
     },
     {
@@ -307,7 +307,7 @@ data:extend({
         type = "double-setting",
         name = "locomotive-max-speed",
         setting_type = "startup",
-        default_value = "1.2",
+        default_value = 1.2,
 		order = "czz"
     },
     {
@@ -428,7 +428,7 @@ data:extend({
         type = "int-setting",
         name = "fluid-wagon-capacity",
         setting_type = "startup",
-        default_value = 25000,
+        default_value = 50000,
 		order = "ezz"
     },
     {

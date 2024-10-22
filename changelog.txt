@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 21. 10. 2024
+  Minor Features:
+    - Updated default values to match Factorio 2.0.
+      - Cars & Tanks are now immune to cliff impacts by default.
+      - Fluid wagon capacity is now 50000.
+  Bugfixes:
+    - locomotive-max-speed (double) is no longer set to a string value by default (woops!).
+  Info:
+    - This update only get the mod up and running on base Factorio 2.0. There may be future updates to account for changes or new additions with the expansion.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 08. 06. 2024
   Major Features:
