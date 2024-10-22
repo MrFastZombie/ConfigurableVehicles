@@ -16,4 +16,4 @@ tasks:
     dir: '{{.APPDATA}}\Factorio\Mods'
     cmds:
       # This command removes the symbolic link. WOOOOO
-      - unlink {{.MODNAME}}
+      - cmd /c rmdir {{.MODNAME}}
