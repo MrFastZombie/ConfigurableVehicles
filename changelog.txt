@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 30. 10. 2024
+  Changes:
+    - Tanks now allow remote driving by default (This is Vanilla behavior).
+      - A warning will be printed in the console to inform users of the vanilla behavior if their remote driving is set to off on a save that had a previous version of this mod.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 22. 10. 2024
   Features:

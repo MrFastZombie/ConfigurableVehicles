@@ -32,7 +32,7 @@ data:extend({
         type = "bool-setting",
         name = "tank-remote-driving",
         setting_type = "startup",
-        default_value = false,
+        default_value = true,
         order = "bba"
     },
     {
