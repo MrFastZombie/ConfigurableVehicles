@@ -12,7 +12,7 @@ script.on_configuration_changed(function (data)
                     end
                 end
 
-                if data.mod_changes["ConfigurableVehicles"].old_version <= "1.1.4" and settings.startup["cargo-wagon-max-speed"].value == 1 then
+                if data.mod_changes["ConfigurableVehicles"].old_version <= "1.2.0" then
                     local wrongSettings = ""
 
                     if(settings.startup["cargo-wagon-max-speed"].value == 1 and settings.startup["fluid-wagon-max-speed"].value == 1) then
@@ -23,12 +23,15 @@ script.on_configuration_changed(function (data)
                         wrongSettings = "Fluid wagon max speed is "
                     end
 
-                    for k, p in pairs(game.players) do
-                        game.players[k].print("[color=55,117,47]Message from Configurable Vehicles:[/color] "..wrongSettings.."currently set to [color=1,0,0]1[/color], which may be due to a now fixed bug in this mod. The vanilla value is 1.5. The relevant settings are under Configurable Vehicles in Mod Settings -> Startup. This message will not display after your next save.",
-                        {
-                            sound = defines.print_sound.always
-                        })
+                    if(settings.startup["cargo-wagon-max-speed"].value == 1 or settings.startup["fluid-wagon-max-speed"].value == 1) then
+                        for k, p in pairs(game.players) do
+                            game.players[k].print("[color=55,117,47]Message from Configurable Vehicles:[/color] "..wrongSettings.."currently set to [color=1,0,0]1[/color], which may be due to a now fixed bug in this mod. The vanilla value is 1.5. The relevant settings are under Configurable Vehicles in Mod Settings -> Startup. This message will not display after your next save.",
+                            {
+                                sound = defines.print_sound.always
+                            })
+                        end
                     end
+                    
                 end
 
             end
