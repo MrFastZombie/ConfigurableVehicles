@@ -72,6 +72,7 @@ data:extend({
         name = "tank-inventory-size",
         setting_type = "startup",
         default_value = 80,
+        minimum_value = 0,
         order = "bf"
     },
     {
@@ -79,6 +80,7 @@ data:extend({
         name = "tank-trash-inventory-size",
         setting_type = "startup",
         default_value = 20,
+        minimum_value = 0,
         order = "bfa"
     },
     {
@@ -93,6 +95,7 @@ data:extend({
         name = "tank-weight",
         setting_type = "startup",
         default_value = 20000,
+        minimum_value = 1,
 		order = "bfb"
     },
     {
@@ -149,6 +152,7 @@ data:extend({
         name = "tank-friction",
         setting_type = "startup",
         default_value = 0.002,
+        minimum_value = 0.000000000001,
 		order = "bf"
     },
     {
@@ -156,6 +160,8 @@ data:extend({
         name = "tank-terrain-friction",
         setting_type = "startup",
         default_value = 0.2,
+        minimum_value = 0,
+        maximum_value = 1,
 		order = "bf"
     },
     {
@@ -187,10 +193,11 @@ data:extend({
 		order = "bf"
     },
     {
-        type = "string-setting",
-        name = "tank-braking-power",
+        type = "double-setting",
+        name = "tank-braking-force",
         setting_type = "startup",
-        default_value = "800kW",
+        default_value = 13333.33,
+        minimum_value = 0.000000000001,
 		order = "bf"
     },
     {
@@ -248,6 +255,7 @@ data:extend({
         name = "car-health",
         setting_type = "startup",
         default_value = 450,
+        minimum_value = 1,
 		order = "azz"
     },
     {
@@ -255,6 +263,7 @@ data:extend({
         name = "car-weight",
         setting_type = "startup",
         default_value = 700,
+        minimum_value = 1,
 		order = "acc"
     },
     {
@@ -290,6 +299,16 @@ data:extend({
         name = "car-friction",
         setting_type = "startup",
         default_value = 0.002,
+        minimum_value = 0.000000000001,
+		order = "azz"
+    },
+    {
+        type = "double-setting",
+        name = "car-terrain-friction",
+        setting_type = "startup",
+        default_value = 1,
+        minimum_value = 0,
+        maximum_value = 1,
 		order = "azz"
     },
     {
@@ -300,10 +319,11 @@ data:extend({
 		order = "ac"
     },
     {
-        type = "string-setting",
-        name = "car-braking-power",
+        type = "double-setting",
+        name = "car-braking-force",
         setting_type = "startup",
-        default_value = "200kW",
+        default_value = 3333.33,
+        minimum_value = 0.000000000001,
 		order = "azz"
     },
     {
@@ -318,6 +338,7 @@ data:extend({
         name = "car-inventory-size",
         setting_type = "startup",
         default_value = 80,
+        minimum_value = 0,
 		order = "azzb"
     },
     {
@@ -325,6 +346,7 @@ data:extend({
         name = "car-trash-inventory-size",
         setting_type = "startup",
         default_value = 0,
+        minimum_value = 0,
         order = "azzzb"
     },
     --Locomotive
@@ -354,6 +376,7 @@ data:extend({
         name = "locomotive-braking-force",
         setting_type = "startup",
         default_value = 10,
+        minimum_value = 0.000000000001,
 		order = "czz"
     },
     {
@@ -368,6 +391,7 @@ data:extend({
         name = "locomotive-friction",
         setting_type = "startup",
         default_value = 0.5,
+        minimum_value = 0.000000000001,
 		order = "czz"
     },
     {
@@ -375,6 +399,7 @@ data:extend({
         name = "locomotive-max-health",
         setting_type = "startup",
         default_value = 1000,
+        minimum_value = 1,
 		order = "czz"
     },
     {
@@ -403,6 +428,7 @@ data:extend({
         name = "locomotive-weight",
         setting_type = "startup",
         default_value = 2000,
+        minimum_value = 1,
 		order = "czz"
     },
     --Cargo wagon
@@ -425,6 +451,7 @@ data:extend({
         name = "cargo-wagon-braking-force",
         setting_type = "startup",
         default_value = 3,
+        minimum_value = 0.000000000001,
 		order = "dzz"
     },
     {
@@ -439,6 +466,7 @@ data:extend({
         name = "cargo-wagon-friction",
         setting_type = "startup",
         default_value = 0.5,
+        minimum_value = 0.000000000001,
 		order = "dzz"
     },
     {
@@ -446,6 +474,7 @@ data:extend({
         name = "cargo-wagon-capacity",
         setting_type = "startup",
         default_value = 40,
+        minimum_value = 1,
 		order = "dzz"
     },
     {
@@ -453,6 +482,7 @@ data:extend({
         name = "cargo-wagon-max-health",
         setting_type = "startup",
         default_value = 600,
+        minimum_value = 1,
 		order = "dzz"
     },
     {
@@ -467,6 +497,7 @@ data:extend({
         name="cargo-wagon-weight",
         setting_type="startup",
         default_value=1000,
+        minimum_value = 1,
 		order = "dzz"
     },
     --Fluid wagon
@@ -489,6 +520,7 @@ data:extend({
         name = "fluid-wagon-braking-force",
         setting_type = "startup",
         default_value = 3,
+        minimum_value = 0.000000000001,
 		order = "ezz"
     },
     {
@@ -503,6 +535,7 @@ data:extend({
         name = "fluid-wagon-friction",
         setting_type = "startup",
         default_value = 0.5,
+        minimum_value = 0.000000000001,
 		order = "ezz"
     },
     {
@@ -510,6 +543,7 @@ data:extend({
         name = "fluid-wagon-capacity",
         setting_type = "startup",
         default_value = 50000,
+        minimum_value = 1,
 		order = "ezz"
     },
     {
@@ -517,6 +551,7 @@ data:extend({
         name = "fluid-wagon-max-health",
         setting_type = "startup",
         default_value = 600,
+        minimum_value = 1,
 		order = "ezz"
     },
     {
@@ -531,6 +566,7 @@ data:extend({
         name="fluid-wagon-weight",
         setting_type="startup",
         default_value=1000,
+        minimum_value = 1,
 		order = "ezz"
     },
     --Spidertron
@@ -567,6 +603,7 @@ data:extend({
         name = "spidertron-leg-max-health",
         setting_type = "startup",
         default_value = 100,
+        minimum_value = 1,
 		order = "fb"
     },
     {
@@ -602,6 +639,7 @@ data:extend({
         name = "spidertron-braking-force",
         setting_type = "startup",
         default_value = 1,
+        minimum_value = 0.000000000001,
 		order = "fzz"
     },
     {
@@ -609,6 +647,8 @@ data:extend({
         name = "spidertron-chain-cooldown",
         setting_type = "startup",
         default_value = 0.5,
+        minimum_value = 0,
+        maximum_value = 1,
 		order = "fzz"
     },
     {
@@ -623,6 +663,7 @@ data:extend({
         name = "spidertron-inventory-size",
         setting_type = "startup",
         default_value = 80,
+        minimum_value = 0,
 		order = "fzz"
     },
     {
@@ -630,6 +671,7 @@ data:extend({
         name = "spidertron-trash-inventory-size",
         setting_type = "startup",
         default_value = 20,
+        minimum_value = 0,
 		order = "fzz"
     },
     {
@@ -637,6 +679,7 @@ data:extend({
         name = "spidertron-max-health",
         setting_type = "startup",
         default_value = 3000,
+        minimum_value = 1,
 		order = "fzz"
     },
     {
@@ -651,6 +694,7 @@ data:extend({
         name = "spidertron-weight",
         setting_type = "startup",
         default_value = 1,
+        minimum_value = 1,
 		order = "fzz"
     },
 })

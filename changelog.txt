@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2. 7. 2026
+  Features:
+    - Car: Terrain friction modifier
+  Changes:
+    - All braking force and friction force settings now have a minimum value as they cannot be negative.
+    - Terrain friction values now have a min of 0 and max of 1.
+    - Weight values now must be 1 or more.
+    - Energy per hitpoint will now be set to 0.1 if a value of 0 is given, to prevent dividing by zero.
+    - All inventory size settings now have a minimum of 0.
+    - All health values now have a minimum of 1.
+    - Spidertron chain cooldown now limited to values in the range of [0,1].
+  Bugfixes:
+    - Braking force for Car and Tank are now doubles.
+      - Internally, they use a new name to prevent loading invalid inputs. If you changed these settings you will need to readjust them.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 1. 7. 2026
   Bugfixes:

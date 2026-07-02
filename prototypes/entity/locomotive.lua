@@ -9,4 +9,7 @@ if settings.startup["locomotive-enable"].value then
     data.raw.locomotive.locomotive.reversing_power_modifier = settings.startup["locomotive-reverse-power-mod"].value
     data.raw.locomotive.locomotive.weight = settings.startup["locomotive-weight"].value
     data.raw.locomotive.locomotive.allow_remote_driving = settings.startup["locomotive-remote-driving"].value
+
+    if(settings.startup["locomotive-energy-per-hit"].value == 0) then data.raw.locomotive.locomotive.energy_per_hit_point = 0.1
+    else data.raw.locomotive.locomotive.energy_per_hit_point = settings.startup["locomotive-energy-per-hit"].value end
 end
