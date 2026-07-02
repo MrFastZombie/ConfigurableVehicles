@@ -1,4 +1,29 @@
+local vehicles = {"tank", "car", "locomotive", "cargo-wagon", "fluid-wagon", "spidertron"}
+local order = {"b", "a", "c", "d", "e", "f"}
+for i, v in pairs(vehicles) do
+    if v ~= "spidertron" then
+        data:extend({
+            {
+                type = "bool-setting",
+                name = v.."-swap-side",
+                localized_name = {"CV-names.swap-sides"},
+                setting_type = "runtime-per-user",
+                default_value = false,
+		        order = order[i].."aa"
+            }
+        })
+    end
+end
+
 data:extend({
+    {
+        type = "string-setting",
+        name = "extra-vehicles-swap-side",
+        setting_type = "runtime-per-user",
+        default_value = "",
+        order = "xxxxxxxxxxaa",
+        allow_blank = true
+    },
     --Tank
     {
         type = "bool-setting",
