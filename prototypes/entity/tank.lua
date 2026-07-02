@@ -12,12 +12,13 @@ if settings.startup["tank-enable"].value then
     data.raw.car.tank.immune_to_rock_impacts = settings.startup["tank-rock-impact"].value
     data.raw.car.tank.immune_to_cliff_impacts = settings.startup["tank-cliff-impact"].value
     data.raw.car.tank.immune_to_tree_impacts = settings.startup["tank-tree-impact"].value
-    data.raw.car.tank.friction = settings.startup["tank-friction"].value
+    data.raw.car.tank.friction_force = settings.startup["tank-friction"].value
+    data.raw.car.tank.terrain_friction_modifier = settings.startup["tank-terrain-friction"].value
     data.raw.car.tank.effectivity = settings.startup["tank-effectivity"].value
     data.raw.car.tank.energy_per_hit_point = settings.startup["tank-energy-per-hit"].value
     data.raw.car.tank.turret_rotation_speed = settings.startup["tank-turret-rotation-speed"].value
     data.raw.car.tank.rotation_speed = settings.startup["tank-rotation-speed"].value
-    data.raw.car.tank.braking_power = settings.startup["tank-braking-power"].value
+    data.raw.car.tank.braking_force = settings.startup["tank-braking-power"].value
     data.raw.car.tank.consumption = settings.startup["tank-consumption"].value
     data.raw.car.tank.inventory_size = settings.startup["tank-inventory-size"].value
     data.raw.car.tank.trash_inventory_size = settings.startup["tank-trash-inventory-size"].value

@@ -106,7 +106,7 @@ data:extend({
         type = "int-setting",
         name = "tank-flamethrower-range",
         setting_type = "startup",
-        default_value = 9,
+        default_value = 15,
 		order = "bd"
     },
     {
@@ -153,6 +153,13 @@ data:extend({
     },
     {
         type = "double-setting",
+        name = "tank-terrain-friction",
+        setting_type = "startup",
+        default_value = 0.2,
+		order = "bf"
+    },
+    {
+        type = "double-setting",
         name = "tank-effectivity",
         setting_type = "startup",
         default_value = 0.9,
@@ -183,7 +190,7 @@ data:extend({
         type = "string-setting",
         name = "tank-braking-power",
         setting_type = "startup",
-        default_value = "400kW",
+        default_value = "800kW",
 		order = "bf"
     },
     {
@@ -449,7 +456,7 @@ data:extend({
 		order = "dzz"
     },
     {
-        type = "int-setting",
+        type = "double-setting",
         name = "cargo-wagon-max-speed",
         setting_type = "startup",
         default_value = 1.5,
@@ -513,7 +520,7 @@ data:extend({
 		order = "ezz"
     },
     {
-        type = "int-setting",
+        type = "double-setting",
         name = "fluid-wagon-max-speed",
         setting_type = "startup",
         default_value = 1.5,

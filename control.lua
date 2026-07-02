@@ -1,13 +1,41 @@
 script.on_configuration_changed(function (data)
     if data.mod_changes ~= nil then
-        if data.mod_changes["ConfigurableVehicles"] ~= nil and data.mod_changes["ConfigurableVehicles"].old_version ~= nil then
-            if data.mod_changes["ConfigurableVehicles"].old_version == "1.1.1" and settings.startup["tank-remote-driving"].value == false then
-                for k, p in pairs(game.players) do
-                    game.players[k].print("[color=55,117,47]Message from Configurable Vehicles:[/color] Tank remote driving is currently set to [color=1,0,0]False[/color], which was previously default for this mod. The vanilla setting which is now default is True and is recommended for Space Age. This message will not display after your next save.",
-                    {
-                        sound = defines.print_sound.always
-                    })
+        if data.mod_changes["ConfigurableVehicles"] ~= nil then 
+            if data.mod_changes["ConfigurableVehicles"].old_version ~= nil then
+
+                if data.mod_changes["ConfigurableVehicles"].old_version == "1.1.1" and settings.startup["tank-remote-driving"].value == false then
+                    for k, p in pairs(game.players) do
+                        game.players[k].print("[color=55,117,47]Message from Configurable Vehicles:[/color] Tank remote driving is currently set to [color=1,0,0]False[/color], which was previously default for this mod. The vanilla setting which is now default is True and is recommended for Space Age. This message will not display after your next save.",
+                        {
+                            sound = defines.print_sound.always
+                        })
+                    end
                 end
+
+                if data.mod_changes["ConfigurableVehicles"].old_version <= "1.1.4" and settings.startup["cargo-wagon-max-speed"].value == 1 then
+                    local wrongSettings = ""
+
+                    if(settings.startup["cargo-wagon-max-speed"].value == 1 and settings.startup["fluid-wagon-max-speed"].value == 1) then
+                        wrongSettings = "Cargon Wagon max speed and Fluid Wagon max speed are "
+                    elseif(settings.startup["cargo-wagon-max-speed"].value == 1) then
+                        wrongSettings = "Cargo wagon max speed is "
+                    elseif(settings.startup["fluid-wagon-max-speed"].value == 1) then
+                        wrongSettings = "Fluid wagon max speed is "
+                    end
+
+                    for k, p in pairs(game.players) do
+                        game.players[k].print("[color=55,117,47]Message from Configurable Vehicles:[/color] "..wrongSettings.."currently set to [color=1,0,0]1[/color], which may be due to a now fixed bug in this mod. The vanilla value is 1.5. The relevant settings are under Configurable Vehicles in Mod Settings -> Startup. This message will not display after your next save.",
+                        {
+                            sound = defines.print_sound.always
+                        })
+                    end
+                end
+
+            end
+        end
+    end
+end)
+
 --- Handles swapping the exit position in a vehicle.
 script.on_event(defines.events.on_player_driving_changed_state, function(event)
     local player = game.get_player(event.player_index)

@@ -10,9 +10,9 @@ if settings.startup["car-enable"].value then
     data.raw.car.car.auto_sort_inventory = settings.startup["car-sort-inventory"].value
     data.raw.car.car.energy_per_hit_point = settings.startup["car-energy-per-hit"].value
     data.raw.car.car.effectivity = settings.startup["car-effectivity"].value
-    data.raw.car.car.friction = settings.startup["car-friction"].value
+    data.raw.car.car.friction_force = settings.startup["car-friction"].value
     data.raw.car.car.turret_rotation_speed = settings.startup["car-turret-rotation-speed"].value
-    data.raw.car.car.braking_power = settings.startup["car-braking-power"].value
+    data.raw.car.car.braking_force = settings.startup["car-braking-power"].value
     data.raw.car.car.consumption = settings.startup["car-consumption"].value
     data.raw.car.car.inventory_size = settings.startup["car-inventory-size"].value
     data.raw.car.car.trash_inventory_size = settings.startup["car-trash-inventory-size"].value
